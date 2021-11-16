@@ -36,7 +36,8 @@ def Equivalent():
         print("You got 5.00 as your average")
         print("Description: FAILURE")
     else: 
-        Eval = input("Other than the grade, what is your mark? [Choose from Inc. , W, D]:  ")
+        Eval = input("Other than the grade, what is your mark? [Choose from Inc. , W, D]:  ") 
+        #Please put the exact word from the bracket like Inc. W or D 
         Evals = ("Inc." , "W" , "D")
         if Eval == "Inc." in Evals:
             print("Your mark is deemed INCOMPLETE ")
