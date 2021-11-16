@@ -32,9 +32,18 @@ def Equivalent():
     elif( Final_ == 75):
         print("You got 3.00 as your average")
         print("Description: PASSING")
-    else:
-        64 < Final_ <= 74
+    elif( 64 < Final_ <= 74 ):
         print("You got 5.00 as your average")
         print("Description: FAILURE")
-    
+    else: 
+        Eval = input("Other than the grade, what is your mark? [Choose from Inc. , W, D]:  ")
+        Evals = ("Inc." , "W" , "D")
+        if Eval == "Inc." in Evals:
+            print("Your mark is deemed INCOMPLETE ")
+        elif Eval == "W" in Evals:
+            print("Your mark is deemed WITHDRAWN")
+        else:
+            Eval == "D" in Evals
+            print("Your mark is deemed DROPPED")
+
 Equivalent()
